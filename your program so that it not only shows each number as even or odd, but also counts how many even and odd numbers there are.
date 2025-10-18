@@ -1,0 +1,19 @@
+#problem
+//your program so that it not only shows each number as even or odd,
+but also counts how many even and odd numbers there are.
+
+#solution
+
+number = int(input("Enter a number : "))
+
+even_sum = 0
+odd_sum = 0
+for i in range (1, number + 1):
+    if i % 2 == 0:
+        even_sum +=1
+        print (f"{i} is an even number")
+    else:
+        odd_sum +=1
+        print (f"{i} is an odd")
+
+print (f"There are {even_sum} even numbers and {odd_sum} odd numbers.")
